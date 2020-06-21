@@ -96,7 +96,7 @@ We get to see the dashboard where the data is persistent.
 
 <h5>Grafana's dashboard :</h5>
 
-![g](https://github.com/gauravsjc02/DevOps-Task5/blob/master/task5/grafana-Dashboard.png)
+![g](https://github.com/gauravsjc02/DevOps-Task5/blob/master/task5/grafana-Dashboard2.png)
 
 
 
