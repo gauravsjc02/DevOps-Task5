@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grafana-deploy
+
+
+spec:
+  selector:
+    matchLabels:
+      app: grafana
+  template:
+    metadata:
+      name: grafana-deploy
+      labels:
+        app: grafana
+    
+    spec:
+      containers:
+        - name: mygrafana
+          image: gauravsjc02/grafana:v1
+          volumeMounts:
+            - mountPath: "/var/lib/grafana"
+              name: gvol-1
+
+      volumes:
+        - name: gvol-1
+          persistentVolumeClaim:
+            claimName: grafana-pvc
+
+      restartPolicy: Always 
