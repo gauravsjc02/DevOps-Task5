@@ -35,8 +35,7 @@ Firstly, I have created the Docker Image using the Dockerfile for both Prometheu
 ![grafana](https://github.com/gauravsjc02/DevOps-Task5/blob/master/task5/grafana-Dockerfile.png)
 
 
-After creating the Dockerfile, I have pushed them into my dockerhub account.
-
+After creating the Dockerfile, I have pushed them into my dockerhub account and then created the pv and pvc file on minikube.
 
 <h3>Persistent Volume(PV) & Persistent Volume Claim(PVC) for Prometheus :-</h3>
 
@@ -87,6 +86,17 @@ kubectl create -f  pod-grafana.yml
 
 ![exp](https://github.com/gauravsjc02/DevOps-Task5/blob/master/task5/exposing.png)
 
+<h5>After Exposing : </h5>
+
+We get to see the dashboard where the data is persistent.
+
+<h5>Prometheus dashboard : </h5>
+
+![p](https://github.com/gauravsjc02/DevOps-Task5/blob/master/task5/prometheus-Dashboard.png)
+
+<h5>Grafana's dashboard :</h5>
+
+![g](https://github.com/gauravsjc02/DevOps-Task5/blob/master/task5/grafana-Dashboard.png)
 
 
 
